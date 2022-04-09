@@ -5,13 +5,13 @@ class Program
     static void Main(string[] args)
     {
         int pictures = 52;
+        int pictureInLine = 3;
         int fullLines;
         int lastLinePictures;
 
-        fullLines = pictures / 3;
-        lastLinePictures = pictures % 3;
+        fullLines = pictures / pictureInLine;
+        lastLinePictures = pictures % pictureInLine;
 
         Console.WriteLine("Всего полных рядов: {0}, количество картинок в неполном ряду: {1}.", fullLines, lastLinePictures);
-
     }
 }
